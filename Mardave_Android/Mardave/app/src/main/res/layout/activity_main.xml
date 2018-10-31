@@ -1,0 +1,93 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="10sp"
+    android:paddingLeft="10sp"
+    android:paddingBottom="10sp"
+    android:paddingTop="10sp">
+
+    <RelativeLayout
+        android:id="@+id/rlGear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@id/sbPower"
+        android:layout_marginStart="25sp">
+
+        <Button
+            android:id="@+id/btnR"
+            android:layout_width="115sp"
+            android:layout_height="50sp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/button_r"
+            android:text="R" />
+
+        <Button
+            android:id="@+id/btnN"
+            android:layout_width="115sp"
+            android:layout_height="50sp"
+            android:layout_below="@+id/btnR"
+            android:background="@drawable/button_n"
+            android:layout_marginTop="5sp"
+            android:text="N" />
+
+        <Button
+            android:id="@+id/btnD"
+            android:layout_width="115sp"
+            android:layout_height="50sp"
+            android:layout_below="@+id/btnN"
+            android:background="@drawable/button_d"
+            android:layout_marginTop="5sp"
+            android:text="D" />
+
+    </RelativeLayout>
+
+    <SeekBar
+        android:id="@+id/sbPower"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="0sp"
+        android:rotation="270"/>
+
+    <com.akaita.android.circularseekbar.CircularSeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="220sp"
+        android:layout_height="200sp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginEnd="20dp"
+        android:visibility="visible"
+        app:enabled="true"
+        app:max="10"
+        app:min="0"
+        app:progress="5"
+        app:progressTextSize="0"
+        app:ringWidth="0.5"
+        app:showIndicator="true"
+        app:showInnerCircle="true" />
+
+    <!--<ImageView-->
+    <!--android:layout_width="100sp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:src="@drawable/m_black"-->
+    <!--android:id="@+id/logo"/>-->
+
+    <!--<Button-->
+    <!--android:layout_width="61dp"-->
+    <!--android:layout_height="64dp"-->
+    <!--android:layout_alignParentEnd="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_marginEnd="271dp"-->
+    <!--android:background="@drawable/button_straight" -->
+    <!--android:text="I/O"/>-->
+
+</RelativeLayout>
